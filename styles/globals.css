@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 @layer base {
   :root {
@@ -26,7 +25,7 @@
     --ring: 142.1 76.2% 36.3%;
     --radius: 1rem;
   }
- 
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
@@ -49,27 +48,26 @@
     --ring: 142.4 71.8% 29.2%;
   }
 }
- 
+
 @layer base {
   * {
-    @apply border-border ;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
-
-article > h1 , article > h2 , article >  h3 ,  article > h4 {
-  @apply font-title !important
+article > h1,
+article > h2,
+article > h3,
+article > h4 {
+  @apply font-title !important;
 }
-
-
 
 @layer utilities {
   .overflow-hidden {
@@ -110,18 +108,18 @@ article > h1 , article > h2 , article >  h3 ,  article > h4 {
 
 /* Custom TODO list checkboxes – shoutout to this awesome tutorial: https://moderncss.dev/pure-css-custom-checkbox-style/ */
 
-ul[data-type="taskList"] li > label {
+ul[data-type='taskList'] li > label {
   margin-right: 0.2rem;
   user-select: none;
 }
 
 @media screen and (max-width: 768px) {
-  ul[data-type="taskList"] li > label {
+  ul[data-type='taskList'] li > label {
     margin-right: 0.5rem;
   }
 }
 
-ul[data-type="taskList"] li > label input[type="checkbox"] {
+ul[data-type='taskList'] li > label input[type='checkbox'] {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
@@ -145,7 +143,7 @@ ul[data-type="taskList"] li > label input[type="checkbox"] {
   }
 
   &::before {
-    content: "";
+    content: '';
     width: 0.65em;
     height: 0.65em;
     transform: scale(0);
@@ -160,22 +158,21 @@ ul[data-type="taskList"] li > label input[type="checkbox"] {
   }
 }
 
-ul[data-type="taskList"] li[data-checked="true"] > div > p {
+ul[data-type='taskList'] li[data-checked='true'] > div > p {
   color: #a8a29e;
   text-decoration: line-through;
   text-decoration-thickness: 2px;
 }
-
 
 code[class*='language-'],
 pre[class*='language-'] {
   /* color: #d6e7ff; */
   /* background: #030314; */
   text-shadow: none;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   line-height: 1.5;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
@@ -211,7 +208,7 @@ pre[class*='language-'] {
   overflow: auto;
 }
 
-:not(pre)>code[class*='language-'] {
+:not(pre) > code[class*='language-'] {
   color: #f0f6f6;
   background: #2a4555;
   padding: 0.2em 0.3em;
@@ -282,7 +279,6 @@ pre {
   overflow-x: auto;
 }
 
-
 /**
  * Inspired by gatsby remark prism - https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/
  * 1. Make the element just wide enough to fit its content.
@@ -335,13 +331,12 @@ pre {
   content: attr(line);
 }
 
-
 .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
- 
+
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }

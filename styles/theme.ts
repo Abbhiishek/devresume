@@ -1,6 +1,6 @@
 export const themeList = [
-    {
-        name: "Default",
-        value: "theme-default",
-    },
+  {
+    name: 'Default',
+    value: 'theme-default',
+  },
 ];
