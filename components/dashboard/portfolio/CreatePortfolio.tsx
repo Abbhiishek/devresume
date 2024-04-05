@@ -143,7 +143,7 @@ export default function CreatePortfolio() {
                       placeholder="name"
                       value={data.name}
                       id="name"
-                      required={true}
+                      required
                       onChange={(e) =>
                         setData({ ...data, name: e.target.value })
                       }

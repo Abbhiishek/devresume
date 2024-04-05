@@ -32,7 +32,7 @@ export async function GET(
     const verificationJson = await verifyDomain(domain);
 
     // domain was just verified
-    if (verificationJson && verificationJson.verified) {
+    if (verificationJson?.verified) {
       status = 'Valid Configuration';
     }
   } else if (configJson.misconfigured) {

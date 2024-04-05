@@ -1,7 +1,7 @@
 export default function LandingPage() {
   return (
     <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
       <div className="w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className="md:text-7xl text-xl lg:text-9xl font-bold text-center text-white relative z-20">

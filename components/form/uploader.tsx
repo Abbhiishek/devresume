@@ -72,7 +72,7 @@ export default function Uploader({
             e.stopPropagation();
             setDragActive(false);
             // need to resolve this issue :)-- maye fixed who knows
-            const file = e.dataTransfer.files && e.dataTransfer.files[0];
+            const file = e.dataTransfer.files?.[0];
             if (file) {
               if (file.size / 1024 / 1024 > 2) {
                 toast.error('File size too big (max 2MB)');
@@ -112,9 +112,9 @@ export default function Uploader({
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
-            <path d="M12 12v9"></path>
-            <path d="m16 16-4-4-4 4"></path>
+            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+            <path d="M12 12v9" />
+            <path d="m16 16-4-4-4 4" />
           </svg>
           <p className="mt-2 text-center text-sm text-gray-500">
             Drag and drop or click to upload.
@@ -142,7 +142,7 @@ export default function Uploader({
           accept="image/*"
           className="sr-only"
           onChange={(e) => {
-            const file = e.currentTarget.files && e.currentTarget.files[0];
+            const file = e.currentTarget.files?.[0];
             if (file) {
               if (file.size / 1024 / 1024 > 2) {
                 toast.error('File size too big (max 2MB)');

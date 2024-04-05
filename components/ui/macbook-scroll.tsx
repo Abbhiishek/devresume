@@ -111,7 +111,7 @@ export const MacbookScroll = ({
         <Trackpad />
         <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
         {showGradient && (
-          <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
+          <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50" />
         )}
         {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
       </div>
@@ -183,7 +183,7 @@ export const Trackpad = () => {
       style={{
         boxShadow: '0px 0px 1px 1px #00000020 inset',
       }}
-    ></div>
+     />
   );
 };
 
@@ -357,16 +357,16 @@ export const Keypad = () => {
           <span className="block">P</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`{`}</span>
-          <span className="block">{`[`}</span>
+          <span className="block">{"{"}</span>
+          <span className="block">{"["}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`}`}</span>
-          <span className="block">{`]`}</span>
+          <span className="block">{"}"}</span>
+          <span className="block">{"]"}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`|`}</span>
-          <span className="block">{`\\`}</span>
+          <span className="block">{"|"}</span>
+          <span className="block">{"\\"}</span>
         </KBtn>
       </Row>
 
@@ -407,12 +407,12 @@ export const Keypad = () => {
           <span className="block">L</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`:`}</span>
-          <span className="block">{`;`}</span>
+          <span className="block">{":"}</span>
+          <span className="block">{";"}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`"`}</span>
-          <span className="block">{`'`}</span>
+          <span className="block">{'"'}</span>
+          <span className="block">{"'"}</span>
         </KBtn>
         <KBtn
           className="w-[2.85rem] items-end justify-end pr-[4px] pb-[2px]"
@@ -452,16 +452,16 @@ export const Keypad = () => {
           <span className="block">M</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`<`}</span>
-          <span className="block">{`,`}</span>
+          <span className="block">{"<"}</span>
+          <span className="block">{","}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{`>`}</span>
-          <span className="block">{`.`}</span>
+          <span className="block">{">"}</span>
+          <span className="block">{"."}</span>
         </KBtn>{' '}
         <KBtn>
-          <span className="block">{`?`}</span>
-          <span className="block">{`/`}</span>
+          <span className="block">{"?"}</span>
+          <span className="block">{"/"}</span>
         </KBtn>
         <KBtn
           className="w-[3.65rem] items-end justify-end pr-[4px] pb-[2px]"
@@ -508,7 +508,7 @@ export const Keypad = () => {
             <span className="block">command</span>
           </div>
         </KBtn>
-        <KBtn className="w-[8.2rem]"></KBtn>
+        <KBtn className="w-[8.2rem]" />
         <KBtn
           className="w-8"
           childrenClassName="h-full justify-between py-[4px]"
@@ -607,7 +607,7 @@ export const SpeakerGrid = () => {
           'radial-gradient(circle, #08080A 0.5px, transparent 0.5px)',
         backgroundSize: '3px 3px',
       }}
-    ></div>
+     />
   );
 };
 

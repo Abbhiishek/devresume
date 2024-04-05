@@ -24,7 +24,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             startPosition={0.3}
             stopDelayMs={200}
             height={3}
-            showOnShallow={true}
+            showOnShallow
           />
           <Toaster className="dark:hidden" />
           <Toaster theme="dark" className="hidden dark:block" />

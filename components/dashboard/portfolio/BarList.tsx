@@ -15,7 +15,7 @@ export const BlogBarList = ({
       color={['green-500']}
       data={data}
       className="mx-auto !fill-green-500"
-      showAnimation={true}
+      showAnimation
     />
   </>
 );
@@ -35,7 +35,7 @@ export const BrowsersAgents = async ({ data }: { data: data[] }) => {
         color={['cyan-500']}
         data={data}
         className="mx-auto"
-        showAnimation={true}
+        showAnimation
       />
     </div>
   );
@@ -50,7 +50,7 @@ export const OsAgents = async ({ data }: { data: data[] }) => {
         color={['cyan-500']}
         data={data}
         className="mx-auto"
-        showAnimation={true}
+        showAnimation
       />
     </div>
   );
@@ -65,7 +65,7 @@ export const DeviceAgents = async ({ data }: { data: data[] }) => {
         color={['cyan-500']}
         data={data}
         className="mx-auto"
-        showAnimation={true}
+        showAnimation
       />
     </div>
   );

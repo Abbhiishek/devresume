@@ -37,8 +37,8 @@ async function BlogPreviewSection() {
               <span className="text-green-400 text-xl">The Most</span>
             </span>
           }
-          src={`/productshowcase-blog-macbook.png`}
-          showGradient={true}
+          src={"/productshowcase-blog-macbook.png"}
+          showGradient
         />
       </div>
       <div className="flex justify-center items-center flex-col dark:bg-[#0B0B0F] bg-white">

@@ -98,7 +98,7 @@ export default function BlogEditor({ blog }: { blog: PostWithSite }) {
           type="text"
           placeholder="Title"
           defaultValue={blog?.title || ''}
-          autoFocus
+          
           onChange={(e) => setData({ ...data, title: e.target.value })}
           className="dark:placeholder-text-600 border-none px-0 font-cal text-3xl placeholder:text-stone-400 focus:outline-none focus:ring-0 bg-transparent  dark:text-white"
         />
@@ -114,7 +114,7 @@ export default function BlogEditor({ blog }: { blog: PostWithSite }) {
           className="relative block "
           defaultValue={blog?.content || ''}
           storageKey={`blog-content-${data.id}`}
-          disableLocalStorage={true}
+          disableLocalStorage
           onUpdate={(editor) => {
             setData((prev) => ({
               ...prev,

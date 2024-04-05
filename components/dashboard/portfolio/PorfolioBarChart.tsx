@@ -20,12 +20,12 @@ function PorfolioBarChart({
       categories={['views']}
       colors={['green']}
       yAxisWidth={48}
-      showXAxis={true}
-      showYAxis={true}
+      showXAxis
+      showYAxis
       valueFormatter={dataFormatter}
-      showAnimation={true}
-      showTooltip={true}
-      showLegend={true}
+      showAnimation
+      showTooltip
+      showLegend
     />
   );
 }

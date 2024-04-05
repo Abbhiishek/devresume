@@ -288,10 +288,10 @@ export default function WorkExperienceForm({
                             >
                               <Calendar
                                 mode="single"
-                                ISOWeek={true}
+                                ISOWeek
                                 pagedNavigation={false}
                                 selected={field.value as Date}
-                                footer={true}
+                                footer
                                 onSelect={(date: any) => {
                                   field.onChange(new Date(date));
                                 }}
