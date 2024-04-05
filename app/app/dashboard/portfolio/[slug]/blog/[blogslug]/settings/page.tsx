@@ -1,9 +1,9 @@
-import Form from "@/components/form";
-import DeletePostForm from "@/components/form/delete-post-form";
-import { updatePostMetadata } from "@/lib/actions";
-import prisma from "@/lib/db";
-import { auth } from "@clerk/nextjs/server";
-import { notFound, redirect } from "next/navigation";
+import Form from '@/components/form';
+import DeletePostForm from '@/components/form/delete-post-form';
+import { updatePostMetadata } from '@/lib/actions';
+import prisma from '@/lib/db';
+import { auth } from '@clerk/nextjs/server';
+import { notFound, redirect } from 'next/navigation';
 
 export default async function PostSettings({
   params,
@@ -12,7 +12,7 @@ export default async function PostSettings({
 }) {
   const session = auth();
   if (!session) {
-    redirect("/login");
+    redirect('/login');
   }
   const data = await prisma.blog.findUnique({
     where: {
@@ -33,10 +33,10 @@ export default async function PostSettings({
           description="The slug is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
           helpText="Please use a slug that is unique to this post."
           inputAttrs={{
-            name: "slug",
-            type: "text",
+            name: 'slug',
+            type: 'text',
             defaultValue: data?.slug!,
-            placeholder: "slug",
+            placeholder: 'slug',
           }}
           handleSubmit={updatePostMetadata}
         />
@@ -46,8 +46,8 @@ export default async function PostSettings({
           description="The thumbnail image for your post. Accepted formats: .png, .jpg, .jpeg"
           helpText="Max file size 2MB. Recommended size 1200x630."
           inputAttrs={{
-            name: "image",
-            type: "file",
+            name: 'image',
+            type: 'file',
             defaultValue: data?.image!,
           }}
           handleSubmit={updatePostMetadata}

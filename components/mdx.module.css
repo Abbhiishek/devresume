@@ -1,23 +1,23 @@
 .root :global(.react-tweet-theme) :is(p, img) {
-    margin: 0;
-  }
-  
-.root :global(.react-tweet-theme) a {
-    font-weight: 300;
+  margin: 0;
 }
 
-.root :global(h1 , h2 , h3 , h4) {
-  @apply font-title bg-primary
+.root :global(.react-tweet-theme) a {
+  font-weight: 300;
 }
-  
+
+.root :global(h1, h2, h3, h4) {
+  @apply font-title bg-primary;
+}
+
 .root :global code[class*='language-'] {
   /* color: #d6e7ff; */
   /* background: #030314; */
   text-shadow: none;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   line-height: 1.5;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
@@ -32,21 +32,23 @@
   hyphens: none;
 }
 
-.root :global(pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection,
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection)  {
+.root
+  :global(
+    pre[class*='language-']::-moz-selection,
+    pre[class*='language-'] ::-moz-selection,
+    code[class*='language-']::-moz-selection,
+    code[class*='language-'] ::-moz-selection,
+    pre[class*='language-']::selection,
+    pre[class*='language-'] ::selection,
+    code[class*='language-']::selection,
+    code[class*='language-'] ::selection
+  ) {
   color: inherit;
   background: #1d3b54;
   text-shadow: none;
 }
 
-.root :global pre[class*='language-']
- {
+.root :global pre[class*='language-'] {
   border: 1px solid #2a4555;
   border-radius: 5px;
   padding: 1.5em 1em;
@@ -54,7 +56,7 @@ code[class*='language-'] ::selection)  {
   overflow: auto;
 }
 
-.root :global :not(pre)>code[class*='language-'] {
+.root :global :not(pre) > code[class*='language-'] {
   color: #f0f6f6;
   background: #2a4555;
   padding: 0.2em 0.3em;
@@ -62,14 +64,11 @@ code[class*='language-'] ::selection)  {
   box-decoration-break: clone;
 }
 
-.root :global(.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata) {
+.root :global(.token.comment, .token.prolog, .token.doctype, .token.cdata) {
   color: #446e69;
 }
 
-.root :global .token.punctuation  {
+.root :global .token.punctuation {
   color: #d6b007;
 }
 
@@ -79,7 +78,7 @@ code[class*='language-'] ::selection)  {
 .token.number,
 .token.constant,
 .token.symbol,
-.token.deleted  {
+.token.deleted {
   color: #d6e7ff;
 }
 
@@ -90,40 +89,38 @@ code[class*='language-'] ::selection)  {
   color: #e60067;
 }
 
-.root .token.string , .token.char {
+.root .token.string,
+.token.char {
   color: #49c6ec;
 }
 
-.root :global(.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string) {
+.root
+  :global(
+    .token.operator,
+    .token.entity,
+    .token.url,
+    .language-css .token.string,
+    .style .token.string
+  ) {
   color: #ec8e01;
   background: transparent;
 }
 
-.root :global(.token.atrule,
-.token.attr-value,
-.token.keyword) {
+.root :global(.token.atrule, .token.attr-value, .token.keyword) {
   color: #0fe468;
 }
 
-.root :global(.token.function,
-.token.class-name ){
+.root :global(.token.function, .token.class-name) {
   color: #78f3e9;
 }
 
-.root :global(.token.regex,
-.token.important,
-.token.variable) {
+.root :global(.token.regex, .token.important, .token.variable) {
   color: #d6e7ff;
 }
 
 .root :global pre {
   overflow-x: auto;
 }
-
 
 /**
  * Inspired by gatsby remark prism - https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/
@@ -138,7 +135,7 @@ code[class*='language-'] ::selection)  {
   /* 2 */
 }
 
-.root :global(.code-line ){
+.root :global(.code-line) {
   display: block;
   padding-left: 16px;
   padding-right: 16px;
@@ -148,7 +145,7 @@ code[class*='language-'] ::selection)  {
   /* Set placeholder for highlight accent border color to transparent */
 }
 
-.root :global(.code-line.inserted ){
+.root :global(.code-line.inserted) {
   background-color: rgba(16, 185, 129, 0.2);
   /* Set inserted line (+) color */
 }
@@ -176,6 +173,3 @@ code[class*='language-'] ::selection)  {
   color: rgb(156, 163, 175);
   content: attr(line);
 }
-
-
-

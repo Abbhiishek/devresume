@@ -1,15 +1,7 @@
-import { Editor } from "novel"
-
-
+import { Editor } from 'novel';
 
 function page() {
-    return (
-        <Editor
-            className=""
-            storageKey="demo___editor"
-
-        />
-    )
+  return <Editor className="" storageKey="demo___editor" />;
 }
 
-export default page
+export default page;
