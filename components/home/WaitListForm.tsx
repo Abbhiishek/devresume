@@ -53,7 +53,7 @@ export default function WaitlistForm() {
       if (error.code === 'P2002') {
         toast('Email is Already in Waiting List');
         return {
-          error: "Email is Already in Waiting List",
+          error: 'Email is Already in Waiting List',
         };
       } else {
         toast.error(error.title);

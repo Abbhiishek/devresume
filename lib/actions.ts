@@ -69,7 +69,7 @@ export const createSite = async (formData: FormData) => {
   } catch (error: any) {
     if (error.code === 'P2002') {
       return {
-        error: "This subdomain is already taken",
+        error: 'This subdomain is already taken',
       };
     } else {
       return {
@@ -219,7 +219,6 @@ export const updateSite = withSiteAuth(
       await revalidateTag(
         `${site.subdomain}.${process.env.NEXT_PUBLIC_ROOT_DOMAIN}-metadata`
       );
-      
 
       return response;
     } catch (error: any) {
@@ -246,7 +245,7 @@ export const deleteSite = withSiteAuth(async (_: FormData, site: Site) => {
     await revalidateTag(
       `${site.subdomain}.${process.env.NEXT_PUBLIC_ROOT_DOMAIN}-metadata`
     );
-    
+
     return response;
   } catch (error: any) {
     return {
@@ -284,7 +283,6 @@ export const createPost = withSiteAuth(async (_: FormData, site: Site) => {
   await revalidateTag(
     `${site.subdomain}.${process.env.NEXT_PUBLIC_ROOT_DOMAIN}-posts`
   );
-  
 
   return response;
 });
@@ -330,7 +328,6 @@ export const updatePost = async (data: Blog) => {
     );
 
     // if the site has a custom domain, we need to revalidate those tags too
-    
 
     return response;
   } catch (error: any) {
@@ -402,13 +399,12 @@ export const updatePostMetadata = withBlogAuth(
       );
 
       // if the site has a custom domain, we need to revalidate those tags too
-      
 
       return response;
     } catch (error: any) {
       if (error.code === 'P2002') {
         return {
-          error: "This slug is already in use",
+          error: 'This slug is already in use',
         };
       } else {
         return {
@@ -576,7 +572,7 @@ export const addEducation = async (
   } catch (error: any) {
     if (error.code === 'P2002') {
       return {
-        error: "something happend unexpected 😢",
+        error: 'something happend unexpected 😢',
       };
     } else {
       return {
@@ -679,7 +675,7 @@ export const addWorkExperience = async (
   } catch (error: any) {
     if (error.code === 'P2002') {
       return {
-        error: "something happend unexpected 😢",
+        error: 'something happend unexpected 😢',
       };
     } else {
       return {

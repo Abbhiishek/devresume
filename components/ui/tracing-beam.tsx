@@ -104,7 +104,7 @@ export const TracingBeam = ({
             transition={{
               duration: 10,
             }}
-           />
+          />
           <motion.path
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
@@ -114,7 +114,7 @@ export const TracingBeam = ({
             transition={{
               duration: 10,
             }}
-           />
+          />
           <defs>
             <motion.linearGradient
               id="gradient"

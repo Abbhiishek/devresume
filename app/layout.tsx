@@ -38,7 +38,7 @@ export default function RootLayout({
           defer
           src="https://analytics.us.umami.is/script.js"
           data-website-id="629a831c-6680-4cf7-9962-90c8b14b28dc"
-         />
+        />
       </head>
       <body className={GeistSans.className}>
         {/* <NextTopLoader /> */}

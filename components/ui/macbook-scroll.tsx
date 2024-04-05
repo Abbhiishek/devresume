@@ -183,7 +183,7 @@ export const Trackpad = () => {
       style={{
         boxShadow: '0px 0px 1px 1px #00000020 inset',
       }}
-     />
+    />
   );
 };
 
@@ -357,16 +357,16 @@ export const Keypad = () => {
           <span className="block">P</span>
         </KBtn>
         <KBtn>
-          <span className="block">{"{"}</span>
-          <span className="block">{"["}</span>
+          <span className="block">{'{'}</span>
+          <span className="block">{'['}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{"}"}</span>
-          <span className="block">{"]"}</span>
+          <span className="block">{'}'}</span>
+          <span className="block">{']'}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{"|"}</span>
-          <span className="block">{"\\"}</span>
+          <span className="block">{'|'}</span>
+          <span className="block">{'\\'}</span>
         </KBtn>
       </Row>
 
@@ -407,8 +407,8 @@ export const Keypad = () => {
           <span className="block">L</span>
         </KBtn>
         <KBtn>
-          <span className="block">{":"}</span>
-          <span className="block">{";"}</span>
+          <span className="block">{':'}</span>
+          <span className="block">{';'}</span>
         </KBtn>
         <KBtn>
           <span className="block">{'"'}</span>
@@ -452,16 +452,16 @@ export const Keypad = () => {
           <span className="block">M</span>
         </KBtn>
         <KBtn>
-          <span className="block">{"<"}</span>
-          <span className="block">{","}</span>
+          <span className="block">{'<'}</span>
+          <span className="block">{','}</span>
         </KBtn>
         <KBtn>
-          <span className="block">{">"}</span>
-          <span className="block">{"."}</span>
+          <span className="block">{'>'}</span>
+          <span className="block">{'.'}</span>
         </KBtn>{' '}
         <KBtn>
-          <span className="block">{"?"}</span>
-          <span className="block">{"/"}</span>
+          <span className="block">{'?'}</span>
+          <span className="block">{'/'}</span>
         </KBtn>
         <KBtn
           className="w-[3.65rem] items-end justify-end pr-[4px] pb-[2px]"
@@ -607,7 +607,7 @@ export const SpeakerGrid = () => {
           'radial-gradient(circle, #08080A 0.5px, transparent 0.5px)',
         backgroundSize: '3px 3px',
       }}
-     />
+    />
   );
 };
 

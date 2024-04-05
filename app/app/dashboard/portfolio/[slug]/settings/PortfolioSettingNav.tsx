@@ -59,7 +59,7 @@ export default function SiteSettingsNav({ slug }: { slug: string }) {
             <TabsTrigger
               key={index}
               value={nav.value}
-              className={"rounded-3xl "}
+              className={'rounded-3xl '}
             >
               {nav.name}
             </TabsTrigger>

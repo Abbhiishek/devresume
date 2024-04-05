@@ -98,7 +98,6 @@ export default function BlogEditor({ blog }: { blog: PostWithSite }) {
           type="text"
           placeholder="Title"
           defaultValue={blog?.title || ''}
-          
           onChange={(e) => setData({ ...data, title: e.target.value })}
           className="dark:placeholder-text-600 border-none px-0 font-cal text-3xl placeholder:text-stone-400 focus:outline-none focus:ring-0 bg-transparent  dark:text-white"
         />

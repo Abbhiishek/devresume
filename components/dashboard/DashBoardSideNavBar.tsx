@@ -119,7 +119,7 @@ const NavBarOptions = () => {
         {
           name: 'User Settings',
           icon: <UserCircle width={18} />,
-          Link: "/dashboard/settings",
+          Link: '/dashboard/settings',
           urlname: 'settings',
           isActive: segments.length === 1,
         },
@@ -207,7 +207,9 @@ const NavBarOptions = () => {
           <Button
             key={index}
             variant={nav.isActive ? 'default' : 'bordered'}
-            className={"flex items-center justify-start w-full gap-2  rounded-3xl"}
+            className={
+              'flex items-center justify-start w-full gap-2  rounded-3xl'
+            }
           >
             {nav.icon}
             <span>{nav.name}</span>

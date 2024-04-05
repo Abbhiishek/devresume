@@ -54,7 +54,7 @@ export const TypewriterEffect = ({
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    "dark:text-white text-black opacity-0 hidden",
+                    'dark:text-white text-black opacity-0 hidden',
                     word.className
                   )}
                 >
@@ -92,7 +92,7 @@ export const TypewriterEffect = ({
           'inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500',
           cursorClassName
         )}
-       />
+      />
     </div>
   );
 };
@@ -125,7 +125,7 @@ export const TypewriterEffectSmooth = ({
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn("dark:text-white text-black ", word.className)}
+                  className={cn('dark:text-white text-black ', word.className)}
                 >
                   {char}
                 </span>
@@ -180,7 +180,7 @@ export const TypewriterEffectSmooth = ({
           'block rounded-sm w-[4px]  h-6  bg-green-500',
           cursorClassName
         )}
-       />
+      />
     </div>
   );
 };

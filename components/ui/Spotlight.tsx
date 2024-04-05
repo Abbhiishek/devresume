@@ -25,7 +25,7 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
           transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
           fill={fill || 'white'}
           fillOpacity="0.21"
-         />
+        />
       </g>
       <defs>
         <filter
@@ -43,11 +43,11 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
             in="SourceGraphic"
             in2="BackgroundImageFix"
             result="shape"
-           />
+          />
           <feGaussianBlur
             stdDeviation="151"
             result="effect1_foregroundBlur_1065_8"
-           />
+          />
         </filter>
       </defs>
     </svg>
